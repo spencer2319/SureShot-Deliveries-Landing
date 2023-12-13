@@ -5,123 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SureShot Deliveries - Your Concrete Partner</title>
     <style>
-        :root {
-            --main-bg-color: #fff;
-            --main-text-color: #333;
-            --cta-button-bg: #ff8c00;
-            --cta-button-hover: #e07b00;
-        }
-
-        body {
-            background-color: var(--main-bg-color);
-            color: var(--main-text-color);
-            font-family: Arial, sans-serif;
+        /* Reset styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
         }
 
-        header {
-            background-color: var(--cta-button-bg);
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav a {
-            color: var(--main-text-color);
-            text-decoration: none;
-            padding: 0.5em 1em;
-            margin: 0 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: var(--cta-button-bg);
-            color: #fff;
-        }
-
-        .hero {
-            background: url('drawable/hero-image.jpg') center/cover no-repeat;
-            padding: 4em 0;
-            color: var(--main-text-color);
-            text-align: center;
-            position: relative;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 1em;
-            color: var(--main-text-color);
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            max-width: 800px;
+        container {
+            max-width: 1200px;
             margin: 0 auto;
-            color: var(--main-text-color);
         }
 
-        .cta-container {
-            margin-top: 2em;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1em 2em;
-            background-color: var(--cta-button-bg);
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: var(--cta-button-hover);
-        }
-
-        /* Additional sections and styles based on industry standards */
-
-        section {
-            padding: 4em 0;
-            text-align: center;
-        }
-
-        section h2 {
-            margin-bottom: 1em;
-            font-size: 2em;
-        }
-
-        section p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto 2em;
-            color: var(--main-text-color);
-        }
-
-        /* ... Add styles for other sections as needed ... */
-
-        footer {
-            background-color: var(--cta-button-bg);
+        /* Header styles */
+        header {
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 2em 0;
         }
 
-        footer p {
-            margin: 0;
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 2em 0;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        /* Contact styles */
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info div {
+            width: 48%;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 1em;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Placeholder image styles */
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            margin-bottom: 1em;
+        }
+
+        /* Featured service styles */
+        .featured-service {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 2em;
+            margin: 1em;
+        }
+
+        .featured-service h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .featured-service p {
+            color: #555;
         }
     </style>
 </head>
@@ -133,26 +141,66 @@
 
     <nav>
         <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section class="hero">
-        <h2>Reliable Concrete Deliveries for Your Projects</h2>
-        <p>Experience precision and efficiency with SureShot Deliveries. We are committed to delivering top-quality concrete for your construction and landscaping needs.</p>
-        <div class="cta-container">
-            <a href="#contact" class="cta-button">Contact Us</a>
-            <a href="#subscribe" class="cta-button">Subscribe for Updates</a>
-        </div>
-    </section>
+    <main>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <!-- Placeholder for service information -->
-        <p>Explore our range of concrete delivery services tailored to meet your project requirements.</p>
-    </section>
+        <section id="about">
+            <container>
+                <h2>About Us</h2>
+                <p>Welcome to SureShot Deliveries, your reliable partner for concrete solutions. With a focus on quality, flexibility, and on-time deliveries, we strive to exceed your expectations.</p>
+                <div class="image-placeholder"></div>
+                <p>Our team is dedicated to providing top-notch equipment rental and concrete delivery services. Explore the future of concrete solutions with SureShot Deliveries.</p>
+            </container>
+        </section>
 
-    <!-- Additional sections based on industry standards -->
+        <section id="contact">
+            <container>
+                <h2>Contact Information</h2>
+                <div class="contact-info">
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>123 Concrete Street<br>Cityville, USA</p>
+                    </div>
+                    <div>
+                        <h3>Contact Us</h3>
+                        <p>Email: info@sureshotdeliveries.com<br>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+            </container>
+        </section>
+
+        <section id="products">
+            <container>
+                <h2>Products</h2>
+                <div class="image-placeholder"></div>
+                <p>Explore our range of high-quality concrete equipment available for rent. From mixers to finishing tools, we have the tools you need for your projects.</p>
+            </container>
+        </section>
+
+        <section id="services">
+            <container>
+                <h2>Services</h2>
+                <div class="featured-service">
+                    <h3>On-Time Deliveries</h3>
+                    <p>Count on us for punctual and reliable deliveries to keep your project on schedule.</p>
+                </div>
+                <div class="featured-service">
+                    <h3>Flexible Rental Options</h3>
+                    <p>Choose from various rental durations to fit your project's unique needs.</p>
+                </div>
+                <div class="featured-service">
+                    <h3>Quality Equipment</h3>
+                    <p>Our well-maintained machinery ensures smooth operations for your concrete projects.</p>
+                </div>
+            </container>
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2023 SureShot Deliveries. All rights reserved.</p>
