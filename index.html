@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SureShot Deliveries - Your Concrete Partner</title>
     <style>
+        /* Updated color scheme */
+        :root {
+            --main-bg-color: #fff;
+            --main-text-color: #333;
+            --cta-button-bg: #ff8c00;
+            --cta-button-hover: #e07b00;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         /* Your existing styles remain here */
 
         .hero {
             background: url('hero-image.jpg') center/cover no-repeat;
             padding: 4em 0;
-            color: #fff;
+            color: var(--main-text-color);
             text-align: center;
             position: relative;
         }
@@ -19,13 +35,14 @@
             font-size: 2.5em;
             font-weight: bold;
             margin-bottom: 1em;
+            color: var(--main-text-color);
         }
 
         .hero p {
             font-size: 1.2em;
             max-width: 800px;
             margin: 0 auto;
-            color: #fff;
+            color: var(--main-text-color);
         }
 
         .hero .cta-container {
@@ -35,7 +52,7 @@
         .cta-button {
             display: inline-block;
             padding: 1em 2em;
-            background-color: #ff8c00;
+            background-color: var(--cta-button-bg);
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
@@ -44,7 +61,7 @@
         }
 
         .cta-button:hover {
-            background-color: #e07b00;
+            background-color: var(--cta-button-hover);
         }
 
         .services {
@@ -89,7 +106,7 @@
 
         .contact-form button {
             padding: 1em 2em;
-            background-color: #ff8c00;
+            background-color: var(--cta-button-bg);
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -99,7 +116,7 @@
         }
 
         .contact-form button:hover {
-            background-color: #e07b00;
+            background-color: var(--cta-button-hover);
         }
 
         .subscribe {
@@ -129,7 +146,7 @@
 
         .subscribe-form button {
             padding: 1em 2em;
-            background-color: #ff8c00;
+            background-color: var(--cta-button-bg);
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -139,7 +156,7 @@
         }
 
         .subscribe-form button:hover {
-            background-color: #e07b00;
+            background-color: var(--cta-button-hover);
         }
     </style>
 </head>
@@ -178,4 +195,8 @@
         <h2>What Our Clients Say</h2>
         <p class="testimonial">"SureShot Deliveries made our project hassle-free. Their attention to detail and reliable service exceeded our expectations."</p>
         <p class="testimonial-author">- John Doe, Satisfied Customer</p>
-    </section
+    </section>
+    <!-- Additional sections, testimonials, FAQs, and social links remain here -->
+
+</body>
+</html>
