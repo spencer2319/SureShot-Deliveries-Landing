@@ -16,12 +16,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        section {
-            padding: 2em;
+            padding: 2em 1em;
             text-align: center;
         }
 
@@ -29,8 +24,26 @@
             color: #333;
         }
 
-        p {
-            color: #555;
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') center/cover no-repeat;
+            padding: 4em 0;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        .cta-description {
+            margin-top: 1em;
+            color: #444;
         }
 
         form {
@@ -41,41 +54,32 @@
         }
 
         input {
-            padding: 0.5em;
+            padding: 0.8em;
             margin: 0 1em;
             width: 60%;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 4px;
+            font-size: 1em;
         }
 
         button {
-            padding: 0.5em 1em;
+            padding: 0.8em 1.5em;
             background-color: #333;
             color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 1em;
         }
 
         button:hover {
             background-color: #555;
         }
 
-        .brand-image {
-            max-width: 100%;
-            height: auto;
-            margin-top: 2em;
-        }
-
         .testimonial {
             margin-top: 2em;
             font-style: italic;
             color: #666;
-        }
-
-        .cta-description {
-            margin-top: 2em;
-            color: #444;
         }
 
         .faq {
@@ -98,31 +102,33 @@
         .social-links a {
             margin-right: 1em;
             color: #333;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="your-logo.png" alt="SureShot Deliveries Logo" class="brand-image">
+        <img src="your-logo.png" alt="SureShot Deliveries Logo" style="max-width: 100%;">
         <h1>Your Trusted Concrete Partner</h1>
     </header>
 
-    <section>
+    <section class="hero">
         <h2>Reliable Concrete Deliveries for Your Projects</h2>
         <p>Experience precision and efficiency with SureShot Deliveries. We are committed to delivering top-quality concrete for your construction and landscaping needs.</p>
-
-        <div class="testimonial">
-            <p>"SureShot Deliveries made our project hassle-free. Their attention to detail and reliable service exceeded our expectations."</p>
-            <p>- John Doe, Satisfied Customer</p>
-        </div>
-
         <p class="cta-description">Sign up for updates and be the first to know when we launch in Middleboro!</p>
 
         <form>
             <input type="email" placeholder="Your Email Address" required>
             <button type="submit">Get Notified</button>
         </form>
+    </section>
+
+    <section>
+        <div class="testimonial">
+            <p>"SureShot Deliveries made our project hassle-free. Their attention to detail and reliable service exceeded our expectations."</p>
+            <p>- John Doe, Satisfied Customer</p>
+        </div>
 
         <div class="faq">
             <h3>Frequently Asked Questions</h3>
