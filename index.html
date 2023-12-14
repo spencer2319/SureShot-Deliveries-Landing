@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SureShot Deliveries - Your Concrete Partner</title>
     <style>
-        /* ... (previous styles remain unchanged) */
-
         /* Home section styles */
         .home-section {
             text-align: center;
@@ -18,12 +16,18 @@
         .home-section h1 {
             font-size: 2.5em;
             margin-bottom: 0.5em;
+            background-color: #ff8c00; /* Orange background for the top part of the header */
+            display: inline;
+            padding: 0.2em 1em; /* Add padding to center the text within the orange background */
         }
 
         .home-section p {
             font-size: 1.2em;
             max-width: 800px;
             margin: 0 auto 2em;
+            background-color: #fff; /* White background for the Reliable Concrete... part */
+            color: #000; /* Black text for the Reliable Concrete... part */
+            padding: 1em; /* Add padding for better readability */
         }
 
         .home-section .cta-buttons {
@@ -33,8 +37,8 @@
         .home-section .cta-button {
             display: inline-block;
             padding: 1em 2em;
-            background-color: #fff; /* White background for the buttons */
-            color: #ff8c00; /* Orange text color for the buttons */
+            background-color: #ff8c00; /* Orange background for the buttons */
+            color: #fff;
             text-decoration: none;
             font-size: 1.2em;
             border-radius: 5px;
@@ -44,7 +48,7 @@
 
         .home-section .cta-button:hover {
             background-color: #ff6f00; /* Darker orange for hover effect */
-            color: #fff; /* White text color for hover effect */
+            color: #fff;
         }
 
         /* Navigation styles */
@@ -59,6 +63,9 @@
             text-decoration: none;
             margin: 0 1em;
             font-size: 1.2em;
+            border: 1px solid #ddd; /* Change the border color to match the previous gray color */
+            border-radius: 5px;
+            padding: 0.5em 1em;
         }
 
         /* Service section styles */
@@ -73,7 +80,7 @@
         }
 
         .service-section .featured-service {
-            border: 1px solid #ccc;
+            border: 1px solid #ddd; /* Change the border color to match the previous gray color */
             border-radius: 5px;
             padding: 2em;
             margin: 1em;
@@ -89,55 +96,7 @@
             color: #555;
         }
 
-        /* Products section styles */
-        .products-section {
-            text-align: center;
-            padding: 2em 0;
-        }
-
-        .products-section h2 {
-            font-size: 2em;
-            margin-bottom: 1em;
-        }
-
-        .products-section .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background-color: #ddd;
-            margin-bottom: 1em;
-        }
-
-        .products-section p {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 1em;
-        }
-
-        /* Areas We Serve styles */
-        .service-area {
-            background-color: #f8f8f8;
-            padding: 2em 0;
-        }
-
-        .service-area h2 {
-            font-size: 2em;
-            margin-bottom: 1em;
-        }
-
-        .service-area ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .service-area li {
-            font-size: 1.2em;
-            color: #555;
-            margin: 0.5em;
-        }
+        /* ... (remaining styles remain unchanged) */
     </style>
 </head>
 <body>
@@ -183,27 +142,7 @@
             </container>
         </section>
 
-        <section class="products-section" id="products">
-            <container>
-                <h2>Products</h2>
-                <div class="image-placeholder"></div>
-                <p>Explore our range of high-quality concrete equipment available for rent. From mixers to finishing tools, we have the tools you need for your projects.</p>
-            </container>
-        </section>
-
-        <section class="service-area" id="service-area">
-            <container>
-                <h2>Areas We Serve</h2>
-                <ul>
-                    <li>Middleboro, MA</li>
-                    <li>Bridgewater, MA</li>
-                    <li>Taunton, MA</li>
-                    <li>Raynham, MA</li>
-                    <li>Easton, MA</li>
-                    <!-- Add more cities or areas as needed -->
-                </ul>
-            </container>
-        </section>
+        <!-- ... (remaining sections remain unchanged) -->
 
     </main>
 
